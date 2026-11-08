@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090914">
+<title>HAPPPIIEST BIRTHDAY ANYA</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090914;--panel:rgba(255,255,255,.055);--text:#f8f5ff;--muted:#aaa6c4;--pink:#ff76b7;--lav:#b7a3ff;--cyan:#8be9fd}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;background:radial-gradient(ellipse at 15% 12%,rgba(112,67,180,.19),transparent 38%),radial-gradient(ellipse at 85% 36%,rgba(255,83,158,.11),transparent 34%),radial-gradient(ellipse at 45% 90%,rgba(48,109,180,.12),transparent 42%)}.serif{font-family:'Playfair Display',serif}.gradient-text{background:linear-gradient(110deg,#fff 8%,#ff9dce 42%,#b8a4ff 76%,#9deaff);-webkit-background-clip:text;background-clip:text;color:transparent}.glass{background:var(--panel);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(18px);box-shadow:0 18px 70px rgba(0,0,0,.18)}.eyebrow{letter-spacing:.22em;text-transform:uppercase;font-size:.68rem;color:#c7b7f8}.orb{position:absolute;border-radius:50%;filter:blur(1px);pointer-events:none;animation:drift 9s ease-in-out infinite}.orb.one{width:260px;height:260px;background:radial-gradient(circle,rgba(255,118,183,.16),transparent 68%);top:8%;left:-100px}.orb.two{width:330px;height:330px;background:radial-gradient(circle,rgba(135,120,255,.17),transparent 68%);top:40%;right:-140px;animation-delay:-4s}@keyframes drift{50%{transform:translate3d(20px,-28px,0) scale(1.08)}}#sky{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.particle{position:absolute;bottom:-80px;opacity:0;animation:floatUp linear forwards;filter:drop-shadow(0 0 8px currentColor)}@keyframes floatUp{0%{transform:translateY(0) rotate(0deg) scale(.7);opacity:0}12%{opacity:.8}85%{opacity:.7}100%{transform:translateY(-115vh) rotate(35deg) scale(1.2);opacity:0}}.content{position:relative;z-index:1}.nav{background:rgba(9,9,20,.64);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}.navlink{color:#b7b2ce;transition:color .25s}.navlink:hover{color:#fff}.pill{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.055);border-radius:999px;padding:.7rem 1rem;color:#e9e3ff;transition:.25s}.pill:hover{border-color:rgba(255,118,183,.7);transform:translateY(-2px);background:rgba(255,118,183,.1)}.primary{background:linear-gradient(110deg,#ff79b8,#a18cff);color:#180b20;border-radius:999px;padding:.9rem 1.25rem;font-weight:700;box-shadow:0 8px 30px rgba(255,118,183,.2);transition:transform .25s,box-shadow .25s}.primary:hover{transform:translateY(-3px);box-shadow:0 12px 40px rgba(255,118,183,.32)}.section{padding:7rem 1.25rem;max-width:1120px;margin:auto}.section-title{font-size:clamp(2.1rem,5vw,4.1rem);line-height:1.08;letter-spacing:-.045em}.tiny-star{color:#ffb3d8;text-shadow:0 0 14px #ff76b7}.timeline-line{background:linear-gradient(#ff8dc8,#a99aff,#8be9fd);width:1px}.memory-card{transition:transform .35s,border-color .35s}.memory-card:hover{transform:translateY(-7px);border-color:rgba(255,118,183,.45)}.travel-art{background:radial-gradient(circle at 50% 35%,rgba(183,163,255,.2),transparent 38%),linear-gradient(145deg,rgba(255,118,183,.09),rgba(139,233,253,.04))}.input-style{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:.8rem 1rem;color:#fff;width:100%;outline:none}.input-style:focus{border-color:#ff8dc8}.input-style::placeholder{color:#817c9b}.modal{display:none;position:fixed;inset:0;z-index:50;align-items:center;justify-content:center;padding:1rem;background:rgba(4,4,12,.78);backdrop-filter:blur(16px)}.modal.show{display:flex}.modal-card{max-width:560px;width:100%;animation:pop .45s cubic-bezier(.2,.8,.2,1)}@keyframes pop{from{opacity:0;transform:translateY(18px) scale(.95)}to{opacity:1;transform:none}}.music-bars{display:flex;gap:3px;align-items:center;height:15px}.music-bars span{display:block;width:3px;height:5px;background:#ff9dce;border-radius:4px}.music-bars.playing span{animation:equalize .65s ease-in-out infinite alternate}.music-bars span:nth-child(2){animation-delay:.15s}.music-bars span:nth-child(3){animation-delay:.3s}.music-bars span:nth-child(4){animation-delay:.1s}@keyframes equalize{to{height:15px}}.progress{height:2px;background:linear-gradient(90deg,#ff76b7,#a18cff);width:0;position:fixed;top:0;left:0;z-index:60}.balloon{position:absolute;width:44px;height:56px;border-radius:50% 50% 48% 48%;opacity:.8;filter:drop-shadow(0 0 12px currentColor)}.balloon:after{content:"";position:absolute;bottom:-7px;left:19px;border-left:4px solid transparent;border-right:4px solid transparent;border-top:8px solid currentColor}.balloon:before{content:"";position:absolute;width:1px;height:70px;top:60px;left:22px;background:rgba(255,255,255,.22)}.birthday-bbg{text-shadow:0 0 28px rgba(255,118,183,.22);animation:bbgGlow 3s ease-in-out infinite alternate}@keyframes bbgGlow{to{text-shadow:0 0 34px rgba(183,163,255,.45)}}.reduce-motion *{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}@media(max-width:640px){.section{padding:5rem 1.15rem}.hide-mobile{display:none}.hero-title{font-size:clamp(3.2rem,16vw,5rem)}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div><div id="sky" aria-hidden="true"></div>
+<div class="orb one"></div><div class="orb two"></div>
+<div class="content">
+<header class="nav sticky top-0 z-40">
+  <div class="max-w-6xl mx-auto px-5 h-[70px] flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-2 font-semibold tracking-tight"><span class="text-pink-300">✦</span> <span>for anya</span></a>
+    <nav class="hidden md:flex gap-7 text-sm"><a class="navlink" href="#memories">Memories</a><a class="navlink" href="#letter">The letter</a><a class="navlink" href="#adventure">Your universe</a><a class="navlink" href="#wish">Make a wish</a></nav>
+    <button id="musicToggle" class="pill flex items-center gap-2 text-xs" aria-label="Toggle lo-fi music"><span class="music-bars" id="musicBars"><span></span><span></span><span></span><span></span></span><span id="musicLabel">Play a little lo-fi</span></button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="min-h-[88vh] flex items-center relative px-5 py-20">
+  <div class="max-w-6xl mx-auto w-full grid lg:grid-cols-[1.2fr_.8fr] gap-12 items-center">
+    <div class="hero-copy">
+      <div class="eyebrow mb-7 flex items-center gap-3"><span class="w-8 h-px bg-pink-300"></span> A tiny universe, made just for you</div>
+      <h1 class="serif hero-title text-6xl sm:text-7xl lg:text-[6.5rem] leading-[.98] tracking-[-.055em]">The world is<br><span class="gradient-text italic">more magic</span><br>with you in it.</h1>
+      <p class="mt-7 text-lg sm:text-xl text-purple-100/70 max-w-xl leading-relaxed">Happpppppiiiiieeeessstttt  birthday, BIILLLUUUU. <span class="text-white">8th November</span> is your reminder that another beautiful chapter is waiting for you — be bold and confident as u are.Keep shining and smiling always.</p>
+      <div class="mt-8 mb-2">
+        <p class="serif gradient-text text-4xl sm:text-5xl font-bold tracking-wide birthday-bbg">HAPPY BIRTHDAY BBG <span aria-hidden="true">♡</span></p>
+        <p class="mt-3 text-pink-100/70 text-sm sm:text-base">Your day, your magic, your whole universe ✨</p>
+      </div>
+      <div class="mt-7 flex flex-wrap gap-3"><a href="#letter" class="primary inline-flex items-center gap-2">Open your letter <i class="fa-solid fa-arrow-down-long"></i></a><button class="pill" id="sparkleBtn"><i class="fa-solid fa-wand-magic-sparkles mr-2"></i>Make it sparkle</button></div>
+      <div class="mt-12 flex items-center gap-4 text-sm text-purple-100/50"><div class="flex -space-x-2"><span class="w-8 h-8 rounded-full bg-pink-300/20 border border-white/20 flex items-center justify-center">♡</span><span class="w-8 h-8 rounded-full bg-violet-300/20 border border-white/20 flex items-center justify-center">✦</span><span class="w-8 h-8 rounded-full bg-cyan-200/20 border border-white/20 flex items-center justify-center">☾</span></div><span>For the girl who collects horizons.</span></div>
+    </div>
+    <div class="relative flex justify-center items-center min-h-[350px] sm:min-h-[440px]">
+      <div class="absolute w-[min(78vw,390px)] aspect-square rounded-full border border-white/10"></div><div class="absolute w-[min(64vw,320px)] aspect-square rounded-full border border-dashed border-pink-200/20" style="animation:spin 45s linear infinite"></div>
+      <div class="absolute w-[min(54vw,270px)] aspect-square rounded-full bg-gradient-to-br from-pink-400/20 via-violet-400/10 to-cyan-300/10 blur-2xl"></div>
+      <div class="relative glass rounded-[2rem] p-6 sm:p-8 w-[min(78vw,340px)] rotate-[-3deg]" id="postcard">
+        <div class="rounded-2xl overflow-hidden aspect-[4/5] travel-art relative flex flex-col justify-between p-5">
+          <div class="flex justify-between text-xs tracking-widest text-white/55"><span>FIELD NOTES / 024</span><i class="fa-regular fa-star"></i></div>
+          <div class="absolute inset-0 flex items-center justify-center p-3">
+            <!-- Replace bbg-photo.jpg with your photo filename, or use a direct image URL. -->
+            <img src="bbg-photo.jpeg" alt="A favourite photo of the birthday girl" class="w-full h-full object-cover rounded-xl" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="photo-fallback absolute inset-0 items-center justify-center flex-col text-center p-6" style="display:none">
+              <i class="fa-regular fa-images text-5xl text-pink-200 mb-4"></i>
+              <span class="serif text-2xl text-pink-100">Your favourite memory goes here ♡</span>
+            
+            </div>
+          </div>
+          <div class="relative"><div class="eyebrow text-[.6rem] mb-2">NEXT CHAPTER: EVERYWHERE</div><h2 class="serif text-3xl leading-tight">Collect moments,<br><i class="text-pink-200">not permission.</i></h2></div>
+        </div>
+        <div class="pt-4 flex justify-between items-center"><span class="text-xs text-white/45">A postcard from possibility</span><span class="text-pink-200">♡</span></div>
+      </div>
+      <div class="absolute top-8 right-2 sm:right-8 glass rounded-2xl px-4 py-3 rotate-6"><div class="text-pink-200 text-xl">✧</div><div class="text-xs text-white/70">main character<br>energy</div></div>
+      <div class="absolute bottom-10 left-0 glass rounded-2xl px-4 py-3 -rotate-6"><div class="text-xs text-white/50">CURRENT MOOD</div><div class="font-semibold">Wildly, wonderfully you <span class="text-pink-200">♡</span></div></div>
+    </div>
+  </div>
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-xs text-white/35 flex flex-col items-center gap-2"><span>SCROLL INTO THE MAGIC</span><i class="fa-solid fa-arrow-down animate-bounce"></i></div>
+</section>
+
+<section id="memories" class="section pt-0">
+  <div class="text-center max-w-2xl mx-auto reveal">
+    <div class="eyebrow mb-5">A little memory wall</div>
+    <h2 class="section-title serif">Our favourite <span class="gradient-text italic">little moments.</span></h2>
+    <p class="mt-5 text-white/55 leading-relaxed">A place for the photos, silly clips, and memories that make you smile.</p>
+  </div>
+  <div class="grid md:grid-cols-2 gap-5 mt-10">
+    <div class="glass rounded-[2rem] p-4 reveal">
+      <div class="rounded-2xl overflow-hidden bg-white/5 aspect-[4/5]">
+        <!-- Replace bbg-photo.jpg with your own photo filename. -->
+        <img src="bbg-photo2.jpeg" alt="Birthday girl memory" class="w-full h-full object-cover" onerror="this.style.display='none';this.nextElementSibling.classList.remove('hidden')">
+        <div class="hidden w-full h-full min-h-[260px] flex flex-col items-center justify-center text-center p-8 travel-art">
+          <i class="fa-regular fa-image text-5xl text-pink-200 mb-4"></i>
+         
+          <p class="text-sm text-white/50 mt-2">Save it beside this HTML file as <code>bbg-photo.jpeg</code></p>
+        </div>
+      </div>
+      <p class="serif text-xl text-pink-100 mt-4">Pretty girl, prettier memories ♡</p>
+    </div>
+    <div class="glass rounded-[2rem] p-4 reveal">
+      <div class="rounded-2xl overflow-hidden bg-black/30 aspect-[4/5]">
+        <!-- Replace bbg-video.mp4 with your own video filename. -->
+        <video class="w-full h-full object-cover" controls playsinline preload="metadata" poster="bbg-photo3.jpeg">
+          <source src="bbg-video.mp4" type="video/mp4">
+          Your browser does not support embedded video.
+        </video>
+      </div>
+      <p class="serif text-xl text-pink-100 mt-4">A tiny movie of your magic ✨</p>
+      <p class="text-xs text-white/45 mt-1"><b>PLAY THE VIDEO</b> </p>
+    </div>
+  </div>
+</section>
+
+<section id="letter" class="section">
+  <div class="grid md:grid-cols-[.7fr_1.3fr] gap-10 items-start">
+    <div class="reveal"><div class="eyebrow mb-5">01 / A note from the heart</div><h2 class="section-title serif">I wish tum bohot bohot khush rho ......bhagwan ka ashirwaad hamesha tumhare saath rhe ,tum hamesha aage badhte rho..</p><div class="mt-8 text-5xl text-pink-200/80">♡</div></div>
+    <article class="glass rounded-[2rem] p-7 sm:p-10 reveal">
+      <div class="flex items-center gap-3 mb-7"><div class="w-11 h-11 rounded-full bg-gradient-to-br from-pink-300/30 to-violet-300/30 flex items-center justify-center text-pink-100"><i class="fa-regular fa-envelope"></i></div><div><div class="font-semibold">Dear Anya,</div><div class="text-xs text-white/40">A little birthday letter · open slowly</div></div></div>
+      <div class="space-y-4 text-white/70 leading-[1.85] text-[.96rem]">
+        <p>HAPPPPIIIIIIEEEESSSTTT BIRTHDAY ANYA. ♡ I hope 20 brings you the kind of happiness that feels calm, real, and completely yours.</p>
+        <p>May your solo travels lead you to beautiful places, kind strangers, unexpected sunsets, and stories you'll tell for years. Keep choosing the adventures that make your heart feel alive.</p>
+        <p>No matter how far you wander, I hope you always remember how loved you are. The world is brighter with you in it.</p>
+        <p class="serif italic text-xl text-pink-100">“May this year bring you closer to every version of yourself you dream of becoming.”</p>
+      </div>
+      <div class="mt-8 pt-6 border-t border-white/10 flex justify-between items-end"><div><div class="text-xs text-white/40 mb-1">With so much love,</div><div class="serif italic text-2xl">Someone cheering for you</div></div><span class="text-3xl text-pink-200">✦</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="adventure" class="section">
+  <div class="text-center max-w-2xl mx-auto reveal">
+    <div class="eyebrow mb-5">02 / Make a birthday wish</div>
+    <h2 class="section-title serif">A little cake, <span class="gradient-text italic">a lot of love.</span></h2>
+    <p class="mt-5 text-white/55 leading-relaxed">Anya, these wishes are waiting just for you. Take a breath, then blow out your candles.</p>
+  </div>
+  <div class="max-w-2xl mx-auto mt-10 glass rounded-[2rem] p-7 sm:p-10 text-center reveal">
+    <div class="text-xs eyebrow mb-7">BAKED WITH LOVE · FOR YOUR 20TH</div>
+    <div class="cake-scene relative mx-auto w-full max-w-[340px] h-[300px] flex items-end justify-center" aria-label="Interactive birthday cake with candles">
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 flex gap-5 items-end h-[130px]">
+        <div class="candle-wrap relative h-[110px] w-3"><span class="flame absolute -top-7 left-[-4px] text-2xl" style="filter:drop-shadow(0 0 12px #ffb347)">🔥</span><div class="h-full rounded-sm bg-gradient-to-r from-pink-200 via-white to-pink-300"></div></div>
+        <div class="candle-wrap relative h-[130px] w-3"><span class="flame absolute -top-7 left-[-4px] text-2xl" style="filter:drop-shadow(0 0 12px #ffb347)">🔥</span><div class="h-full rounded-sm bg-gradient-to-r from-violet-200 via-white to-violet-300"></div></div>
+        <div class="candle-wrap relative h-[110px] w-3"><span class="flame absolute -top-7 left-[-4px] text-2xl" style="filter:drop-shadow(0 0 12px #ffb347)">🔥</span><div class="h-full rounded-sm bg-gradient-to-r from-cyan-100 via-white to-cyan-200"></div></div>
+      </div>
+      <div class="relative w-[280px] h-[145px] mb-3">
+        <div class="absolute bottom-0 w-full h-[90px] rounded-b-[24px] rounded-t-[13px] bg-gradient-to-b from-[#ffacd5] to-[#b85e9d] shadow-[0_18px_40px_rgba(255,118,183,.2)]"></div>
+        <div class="absolute bottom-[72px] w-full h-[32px] rounded-[50%] bg-[#ffe0ef] border-b-4 border-pink-300/70"></div>
+        <div class="absolute bottom-[15px] left-0 right-0 flex justify-evenly text-2xl text-white/90"><span>✦</span><span>♡</span><span>✧</span><span>♡</span><span>✦</span></div>
+        <div class="absolute bottom-[39px] left-0 right-0 serif text-2xl text-white drop-shadow">Anya ♡</div>
+        <div class="absolute bottom-[-12px] -left-4 -right-4 h-5 rounded-[50%] bg-[#8e5b9f] opacity-80"></div>
+      </div>
+    </div>
+    
+    <p id="blowHint" class="text-white/55 text-sm mt-5">Make a wish, birthday girl ✨</p>
+    <button id="blowBtn" class="primary mt-4"><i class="fa-solid fa-wind mr-2"></i>Click here to blow the candles</button>
+    <button id="songBtn" class="pill mt-3 ml-2"><i class="fa-solid fa-music mr-2"></i>Play Happy Birthday</button>
+    <div id="birthdayMessages" class="hidden mt-9 text-left grid sm:grid-cols-2 gap-3">
+      <div class="message-reveal glass rounded-2xl p-5"><div class="text-pink-200 text-xl mb-2">✦</div><h3 class="serif text-xl">Chase the sunrise.</h3><p class="text-sm text-white/55 mt-2 leading-relaxed">May you wake up somewhere new and watch the whole sky turn gold just for you.</p></div>
+      <div class="message-reveal glass rounded-2xl p-5"><div class="text-violet-200 text-xl mb-2">♡</div><h3 class="serif text-xl">Take the long way.</h3><p class="text-sm text-white/55 mt-2 leading-relaxed">May the wrong turn become your favourite story and the unplanned stop become a core memory.</p></div>
+      <div class="message-reveal glass rounded-2xl p-5"><div class="text-cyan-200 text-xl mb-2">☾</div><h3 class="serif text-xl">Keep the little moments.</h3><p class="text-sm text-white/55 mt-2 leading-relaxed">A warm drink, a stranger's kindness, a song through a window — let ordinary days surprise you.</p></div>
+      
+      <div class="message-reveal glass rounded-2xl p-5"><div class="text-rose-200 text-xl mb-2">♡</div><h3 class="serif text-xl">Be your own home.</h3><p class="text-sm text-white/55 mt-2 leading-relaxed">Wherever you travel, may you carry confidence, kindness, and a little peace inside you.</p></div>
+      <div class="message-reveal glass rounded-2xl p-5"><div class="text-pink-200 text-xl mb-2">🌍</div><h3 class="serif text-xl">Your world is waiting.</h3><p class="text-sm text-white/55 mt-2 leading-relaxed">May 20 bring brave beginnings, beautiful places, belly laughs, and memories you’ll keep forever.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0">
+ <div class="glass rounded-[2rem] overflow-hidden reveal">
+  <div class="grid md:grid-cols-2">
+   
+   <div class="travel-art min-h-[300px] flex items-center justify-center relative overflow-hidden"><div class="absolute w-64 h-64 border border-white/10 rounded-full"></div><div class="absolute w-48 h-48 border border-dashed border-pink-200/30 rounded-full" style="animation:spin 35s linear infinite"></div><div class="text-center relative"><div class="text-7xl mb-4">☾</div><div class="serif italic text-3xl gradient-text">somewhere,</div><div class="serif italic text-3xl gradient-text">your next beginning</div><div class="text-xs tracking-[.3em] text-white/40 mt-4">IS WAITING</div></div><span class="absolute top-10 left-12 tiny-star">✦</span><span class="absolute bottom-12 right-12 tiny-star">✧</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="wish" class="section text-center">
+  <div class="max-w-3xl mx-auto reveal"><div class="eyebrow mb-5">04 / Before you go</div><h2 class="section-title serif">Close your eyes.<br><span class="gradient-text italic">Wish without limits.</span></h2><p class="mt-6 text-white/55 leading-relaxed max-w-xl mx-auto">Think of one thing you want this next trip around the sun to bring you. Ready? The universe is listening.</p>
+    <div class="mt-9 flex justify-center"><button id="wishBtn" class="primary text-base"><i class="fa-solid fa-wand-sparkles mr-2"></i>Send my wish into the universe</button></div>
+    <div id="wishResult" class="hidden mt-8 glass rounded-3xl p-7 max-w-xl mx-auto"><div class="text-4xl text-pink-200 mb-3">✧</div><p class="serif italic text-2xl">May the wish you whispered become a place you one day stand.</p><p class="text-sm text-white/45 mt-3">Happy birthday, Anya. Your next chapter starts now. ♡</p></div>
+  </div>
+  <div class="mt-20 glass rounded-[2rem] p-7 sm:p-10 max-w-2xl mx-auto reveal">
+    <div class="text-3xl text-pink-200 mb-4">♡</div><h3 class="serif text-3xl">Leave a little note for future you</h3><p class="text-sm text-white/50 mt-3 mb-6">Write a promise, a dream, or a place you want to see. It stays right here in this page while you have it open.</p>
+    <form id="noteForm" class="text-left"><label for="note" class="text-sm text-white/70 block mb-2">A message to your future self</label><textarea id="note" class="input-style min-h-[110px] resize-y" placeholder="Dear future me, this year I want to…" maxlength="500"></textarea><div class="flex flex-wrap gap-3 items-center justify-between mt-4"><span id="noteStatus" class="text-xs text-white/40">Only you and this moment.</span><button class="pill" type="submit"><i class="fa-regular fa-heart mr-2"></i>Seal this note</button></div></form>
+    <div id="savedNote" class="hidden text-left mt-6 border-t border-white/10 pt-5"><div class="eyebrow mb-2">SEALED WITH LOVE</div><p id="savedText" class="serif italic text-xl text-pink-100 whitespace-pre-wrap"></p><button id="editNote" class="text-xs text-white/45 mt-4 underline">Edit note</button></div>
+  </div>
+</section>
+
+<section class="px-5 pb-16 text-center"><div class="max-w-2xl mx-auto"><div class="text-4xl text-pink-200 mb-5">✦</div><p class="serif italic text-3xl sm:text-4xl leading-snug">“May you never run out of places to go, people to love, or reasons to begin again.”</p><p class="mt-6 text-sm text-white/40">Happy 20th birthday, Anya · 8th November <span class="text-pink-200">♡</span></p><button id="replayBtn" class="pill mt-8"><i class="fa-solid fa-rotate-left mr-2"></i>Experience the magic again</button></div></section>
+</main>
+<footer class="border-t border-white/10 py-7 px-5 text-center text-xs text-white/35"><p>Made of stardust, soft feelings, and a little bit of code.</p><p class="mt-2">For Anya · 20th birthday · 8th November · <span id="year"></span></p></footer>
+</div>
+
+<div class="modal" id="surpriseModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card glass rounded-[2rem] p-8 sm:p-10 text-center relative"><button id="closeModal" class="absolute top-5 right-5 text-white/50 hover:text-white" aria-label="Close"><i class="fa-solid fa-xmark text-xl"></i></button><div class="text-5xl mb-5">🎈</div><div class="eyebrow mb-3">A LITTLE BIRTHDAY MAGIC</div><h2 id="modalTitle" class="serif text-4xl gradient-text">You make life brighter.</h2><p class="text-white/65 leading-relaxed mt-5">Anya, may your 20th year be full of unexpected beauty, brave choices, belly laughs, peaceful solo adventures, and the kind of happiness that feels like coming home to yourself.</p><p class="serif italic text-2xl text-pink-100 mt-6">The best is still unfolding. ♡</p><button id="modalCelebrate" class="primary mt-7">Celebrate one more time ✨</button></div></div>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const sky = $('#sky');
+  const colors = ['#ff76b7','#b7a3ff','#8be9fd','#ffd6a5','#ffffff'];
+  function particle(type) {
+    const el = document.createElement('span');
+    el.className = 'particle';
+    const x = Math.random()*100;
+    const duration = 9 + Math.random()*12;
+    const color = colors[Math.floor(Math.random()*colors.length)];
+    if(type === 'balloon') {
+      el.className = 'particle balloon';
+      el.style.background = color; el.style.color = color;
+      el.style.width = (25+Math.random()*25)+'px'; el.style.height=(34+Math.random()*28)+'px';
+    } else {
+      el.textContent = ['♡','♥','✦','✧','⋆'][Math.floor(Math.random()*5)];
+      el.style.color = color;
+      el.style.fontSize = (12+Math.random()*24)+'px';
+    }
+    el.style.left = x+'%'; el.style.animationDuration = duration+'s';
+    el.style.animationDelay = (Math.random()*2)+'s';
+    sky.appendChild(el);
+    setTimeout(()=>el.remove(), (duration+3)*1000);
+  }
+  for(let i=0;i<22;i++) setTimeout(()=>particle(i%5===0?'balloon':'heart'),i*250);
+  setInterval(()=>particle(Math.random()>.83?'balloon':'heart'),850);
+
+  // GSAP entrance and scroll reveals; page remains usable if CDN is unavailable.
+  if(window.gsap) {
+    gsap.from('.hero-copy > *',{y:24,opacity:0,duration:.85,stagger:.13,ease:'power3.out',delay:.15});
+    gsap.from('#postcard',{y:35,opacity:0,rotation:4,duration:1.2,ease:'power3.out',delay:.35});
+    if(window.ScrollTrigger) {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.utils.toArray('.reveal').forEach(el=>gsap.from(el,{y:30,opacity:0,duration:.8,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 87%',once:true}}));
+      ScrollTrigger.create({start:0,end:'max',onUpdate:self=>$('#progress').style.width=(self.progress*100)+'%'});
+    }
+  }
+  $('#year').textContent = new Date().getFullYear();
+  const modal = $('#surpriseModal');
+  function celebrate() {
+    for(let i=0;i<36;i++) setTimeout(()=>particle(i%4===0?'balloon':'heart'),i*45);
+    if(window.gsap) gsap.fromTo('#postcard',{rotation:-5,scale:.96},{rotation:0,scale:1,duration:.65,ease:'elastic.out(1,.5)'});
+  }
+  $('#sparkleBtn').addEventListener('click',()=>{celebrate();modal.classList.add('show')});
+  $('#closeModal').addEventListener('click',()=>modal.classList.remove('show'));
+  $('#modalCelebrate').addEventListener('click',()=>{celebrate();modal.classList.remove('show')});
+  modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('show')});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')modal.classList.remove('show')});
+  $('#wishBtn').addEventListener('click',()=>{
+    $('#wishResult').classList.remove('hidden'); $('#wishBtn').innerHTML='<i class="fa-solid fa-check mr-2"></i>Your wish is on its way';
+    celebrate();
+    if(window.gsap)gsap.from('#wishResult',{y:15,opacity:0,duration:.7,ease:'power2.out'});
+  });
+  $('#noteForm').addEventListener('submit',e=>{
+    e.preventDefault(); const val=$('#note').value.trim();
+    if(!val){$('#noteStatus').textContent='Add a little wish first ♡';return}
+    $('#savedText').textContent=val;$('#savedNote').classList.remove('hidden');$('#noteStatus').textContent='Sealed for this moment ✦';$('#note').blur();
+  });
+  $('#editNote').addEventListener('click',()=>{$('#savedNote').classList.add('hidden');$('#note').focus();$('#noteStatus').textContent='Your note is ready to edit.'});
+  $('#replayBtn').addEventListener('click',()=>{window.scrollTo({top:0,behavior:'smooth'});celebrate();if(window.gsap)gsap.fromTo('.hero-title',{y:12,opacity:.7},{y:0,opacity:1,duration:.7})});
+
+
+  // A click-to-play synthesized Happy Birthday melody. No audio file is needed.
+  let birthdaySongPlaying = false;
+  async function playBirthdaySong() {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) { $('#songBtn').textContent = 'Audio is not supported in this browser'; return; }
+    const ctx = new AC();
+    if (ctx.state === 'suspended') await ctx.resume();
+    const master = ctx.createGain(); master.gain.value = 0.22; master.connect(ctx.destination);
+    // Happy Birthday melody in G major (G4 G4 A4 G4 C5 B4 ...).
+    const melody = [
+      [392,.32],[392,.32],[440,.64],[392,.64],[523.25,.64],[493.88,1.05],
+      [392,.32],[392,.32],[440,.64],[392,.64],[587.33,.64],[523.25,1.05],
+      [392,.32],[392,.32],[783.99,.64],[659.25,.64],[523.25,.64],[493.88,.64],[440,1.05],
+      [698.46,.32],[698.46,.32],[659.25,.64],[523.25,.64],[587.33,.64],[523.25,1.2]
+    ];
+    let t = ctx.currentTime + .12;
+    melody.forEach(([freq,dur]) => {
+      const osc=ctx.createOscillator(), gain=ctx.createGain();
+      osc.type='sine'; osc.frequency.setValueAtTime(freq,t);
+      gain.gain.setValueAtTime(.0001,t); gain.gain.exponentialRampToValueAtTime(.7,t+.025);
+      gain.gain.setValueAtTime(.7,t+dur*.72); gain.gain.exponentialRampToValueAtTime(.0001,t+dur*.94);
+      osc.connect(gain); gain.connect(master); osc.start(t); osc.stop(t+dur);
+      // Soft, bell-like overtone
+      const bell=ctx.createOscillator(), bg=ctx.createGain();
+      bell.type='triangle'; bell.frequency.setValueAtTime(freq*2,t);
+      bg.gain.setValueAtTime(.0001,t); bg.gain.exponentialRampToValueAtTime(.12,t+.02); bg.gain.exponentialRampToValueAtTime(.0001,t+dur*.55);
+      bell.connect(bg); bg.connect(master); bell.start(t); bell.stop(t+dur*.6);
+      t += dur*.88;
+    });
+    $('#songBtn').innerHTML='<i class="fa-solid fa-music mr-2"></i>Happy Birthday is playing…';
+    $('#songBtn').disabled=true; $('#songBtn').style.opacity='.65';
+    setTimeout(()=>{ $('#songBtn').innerHTML='<i class="fa-solid fa-music mr-2"></i>Play Happy Birthday again'; $('#songBtn').disabled=false; $('#songBtn').style.opacity='1'; ctx.close(); }, Math.max(1000,(t-ctx.currentTime)*1000+400));
+  }
+  $('#songBtn').addEventListener('click', playBirthdaySong);
+  $('#blowBtn').addEventListener('click',()=>{
+    document.querySelectorAll('.flame').forEach((flame,i)=>{
+      if(window.gsap) gsap.to(flame,{y:-35,opacity:0,scale:.2,rotation:25,duration:.35,delay:i*.08,onComplete:()=>flame.style.visibility='hidden'});
+      else flame.style.visibility='hidden';
+    });
+    $('#blowHint').textContent='Wish sent into the universe. Happy 20th birthday, Anya! ♡';
+    $('#blowBtn').innerHTML='<i class="fa-solid fa-heart mr-2"></i>Wish sent!';
+    $('#birthdayMessages').classList.remove('hidden');
+    if(window.gsap) gsap.from('#birthdayMessages .message-reveal',{y:18,opacity:0,duration:.55,stagger:.1,ease:'power2.out'});
+    celebrate();
+  });
+
+  // A gentle lo-fi-inspired loop synthesized locally with Web Audio; no audio file required.
+  let audioCtx=null, master=null, musicOn=false, timer=null, step=0;
+  const notes=[261.63,329.63,392.00,493.88,392.00,329.63,293.66,349.23];
+  function tone(freq,start,dur,type='sine',vol=.025){
+    const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
+    osc.type=type;osc.frequency.setValueAtTime(freq,start);
+    gain.gain.setValueAtTime(.0001,start);gain.gain.exponentialRampToValueAtTime(vol,start+.035);gain.gain.exponentialRampToValueAtTime(.0001,start+dur);
+    osc.connect(gain);gain.connect(master);osc.start(start);osc.stop(start+dur+.04);
+  }
+  function playStep(){
+    if(!musicOn||!audioCtx)return;
+    const now=audioCtx.currentTime, n=notes[step%notes.length];
+    tone(n/2,now,1.8,'triangle',.035);tone(n,now+.02,1.1,'sine',.018);
+    if(step%4===0){tone(notes[(step+2)%notes.length]/2,now,2.6,'sine',.018);tone(110,now,.55,'sine',.018)}
+    if(step%2===1)tone(800,now,.04,'sine',.003);
+    step++;
+  }
+  async function toggleMusic(){
+    if(!musicOn){
+      try{
+        const AC=window.AudioContext||window.webkitAudioContext;
+        if(!AC){$('#musicLabel').textContent='Audio unavailable';return}
+        audioCtx=audioCtx||new AC();if(audioCtx.state==='suspended')await audioCtx.resume();
+        master=master||audioCtx.createGain();master.gain.value=.55;master.connect(audioCtx.destination);
+        musicOn=true;playStep();timer=setInterval(playStep,620);
+        $('#musicLabel').textContent='Lo-fi is playing';$('#musicBars').classList.add('playing');
+      }catch(err){$('#musicLabel').textContent='Tap to try music'}
+    }else{
+      musicOn=false;clearInterval(timer);if(master)master.gain.setTargetAtTime(.0001,audioCtx.currentTime,.12);
+      $('#musicLabel').textContent='Play a little lo-fi';$('#musicBars').classList.remove('playing');
+      setTimeout(()=>{if(master&&!musicOn)master.gain.value=.55},500);
+    }
+  }
+  $('#musicToggle').addEventListener('click',toggleMusic);
+})();
+</script>
+</body>
+</html>
